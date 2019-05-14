@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.riewek.minimal.web</groupId>
+	<artifactId>riewek-minimal-web</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>riewek-minimal-web</name>
+	<description></description>
+
+    <parent>
+        <groupId>org.joinfaces</groupId>
+        <artifactId>jsf-spring-boot-parent</artifactId>
+        <version>2.3.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+	</parent>
+<!-- 	<parent> -->
+<!-- 		<groupId>org.springframework.boot</groupId> -->
+<!-- 		<artifactId>spring-boot-starter-parent</artifactId> -->
+<!-- 		<version>1.5.2.RELEASE</version> -->
+<!-- 		<relativePath /> lookup parent from repository -->
+<!-- 	</parent> -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<!-- <primefaces.version>6.0</primefaces.version> -->
+		<!-- <primefacesthemes.version>1.0.10</primefacesthemes.version> -->
+		<!-- <javaee.servlet.version>3.1.0</javaee.servlet.version> -->
+		<!-- <javaee.jsp.version>2.3.1</javaee.jsp.version> -->
+		<!-- <javaee.jsf.version>2.2.14</javaee.jsf.version> -->
+		<!-- <javaee.jstl.version>1.2.1</javaee.jstl.version> -->
+		<!-- <javaee.el.version>3.0.0</javaee.el.version> -->
+	</properties>
+
+	<dependencies>
+		<!-- <dependency> -->
+		<!-- <groupId>org.primefaces</groupId> -->
+		<!-- <artifactId>primefaces</artifactId> -->
+		<!-- <version>${primefaces.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.primefaces.themes</groupId> -->
+		<!-- <artifactId>all-themes</artifactId> -->
+		<!-- <version>${primefacesthemes.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.sun.faces</groupId> -->
+		<!-- <artifactId>jsf-api</artifactId> -->
+		<!-- <version>${javaee.jsf.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.sun.faces</groupId> -->
+		<!-- <artifactId>jsf-impl</artifactId> -->
+		<!-- <version>${javaee.jsf.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.servlet.jsp.jstl</groupId> -->
+		<!-- <artifactId>javax.servlet.jsp.jstl-api</artifactId> -->
+		<!-- <version>${javaee.jstl.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>javax.servlet-api</artifactId> -->
+		<!-- <version>${javaee.servlet.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.servlet.jsp</groupId> -->
+		<!-- <artifactId>javax.servlet.jsp-api</artifactId> -->
+		<!-- <version>${javaee.jsp.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.el</groupId> -->
+		<!-- <artifactId>javax.el-api</artifactId> -->
+		<!-- <version>${javaee.el.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.tomcat.embed</groupId> -->
+		<!-- <artifactId>tomcat-embed-jasper</artifactId> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.joinfaces</groupId>
+			<artifactId>jsf-spring-boot-starter</artifactId>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-aop</artifactId> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-freemarker</artifactId> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>io.pivotal.spring.cloud</groupId> -->
+		<!-- <artifactId>spring-cloud-services-starter-config-client</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-security</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-social-facebook</artifactId> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.spring.cloud</groupId>
+				<artifactId>spring-cloud-services-dependencies</artifactId>
+				<version>1.4.1.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
